@@ -1,3 +1,8 @@
-create a git repo and clone it in local
-create code.py and add code to it.(it will save a csv file to a new "data" folder)
-do a git add -commit-push before initializing dvc.
+1.create a git repo and clone it in local
+2.create code.py and add code to it.(it will save a csv file to a new "data" folder)
+3.do a git add -commit-push before initializing dvc.
+4.now we will do "dvc init" (creates .dvcignore ,.dvc) 
+5.now do "mkdir s3" (Creates a new S3 directory) here we have created S3 directory in local system but in real word it should be on cloud
+6.now we do "dvc remote add -d myremote S3"  --> here by running this command we have told dvc to there remote path on S3 directory
+and here in the code "dvc remote add -d myremote S3"  inplace of S3 we need to given S3 bucket cloud url if we use here AWS service.
+7.
